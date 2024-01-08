@@ -1,0 +1,136 @@
+.product {
+    display: flex;
+    position: relative;
+
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px solid #6FCF97;
+    background: #E8E8E8;
+    margin-bottom: 12px;
+    padding: 12px 18px;
+
+}
+
+.product__busy {
+    border: 2px solid #F2994A;
+}
+
+.product_unavailable {
+    border: 2px solid rgba(235, 87, 87, 0.5) ;
+}
+
+
+.product__about {
+    display: flex;
+    flex-direction: column;
+    gap: 0px, 1px;
+    background-color: none;
+}
+
+
+
+
+.product__title {
+    color: #333;
+    font-family: Saira;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 6px;
+}
+
+.product__titleName {
+    font-weight: 700;
+}
+
+.product__id {
+    color: #717171;
+    font-family: Saira;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__statusLable {
+    color: #333;
+    font-family: Saira;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+.status_dropdown_container {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    position: relative;
+}
+
+.product__status {
+    display: inline-block;
+    height: 30px;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #74646e;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+/* Select arrow styling */
+.status_dropdown_container .myarrow {
+    width: 10px;
+    height: 5px;
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    right: 3px;
+    background: url("../img/myarrow.svg") right / 90% no-repeat #eee;
+    pointer-events: none;
+}
+
+.product__price {
+    display: block;
+    margin-top: auto;
+    color: #000;
+    font-family: Saira;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.product__closed {
+    width: 8px;
+    height: 8px;
+    top: 12px;
+    right: 12px;
+    position: absolute;
+    display: inline-block;
+    background: url("../img/close.svg") center / 100% no-repeat #eee;
+    transition: all 0.1s ease
+}
+
+.product__closed:hover {
+    top: 10px;
+    right: 10px;
+    width: 12px;
+    height: 12px;
+}
+
+
+.product_unavailable .product__title,
+.product_unavailable .product__id,
+.product_unavailable .product__price,
+.product_unavailable .product__closed {
+    /* border: 2px solid #EB5757; */
+    opacity: 0.5;
+}

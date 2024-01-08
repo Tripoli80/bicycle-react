@@ -1,0 +1,57 @@
+.forma {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+
+}
+
+.forma__head {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+
+}
+
+.forma__colum {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+
+}
+
+.forma__textField {
+    border-radius: 5px;
+    border: none;
+    padding: 5px 16px;
+    background: #E8E8E8;
+    color: #717171;
+    font-family: Saira;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.forma__textField.texterror {
+    border: 1px solid red;
+    
+}
+
+.forma__textDescription {
+    min-height: 65px;
+    overflow: hidden;
+    resize: vertical;
+    border: none;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* justify-content: flex-end; */
+}

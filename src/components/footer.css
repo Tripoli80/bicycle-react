@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.footer {
+    margin-top: auto;
+    display: flex;
+    background-color: #696969;
+    padding: 10px;
+
+}
+
+.footer__title {
+    display: block;
+    color: #FFF;
+    font-family: Saira;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0; */
+    margin-left: auto;
+    padding: 0;
+}
+
+.footer__left {
+    color: #CBCACA;
+}
