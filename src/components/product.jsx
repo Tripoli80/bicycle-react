@@ -36,13 +36,16 @@ export const Product = ({ product, onDelete, onChangeStatus }) => {
         </h2>
         <p className="product__id">ID: {product.id}</p>
         <div className="status_dropdown_container">
-          <label htmlFor="statusDropdown" className="product__statusLable">
+          <label
+            htmlFor={product.id + "statusDropdown"}
+            className="product__statusLable"
+          >
             STATUS:
           </label>
           <span className="myarrow" />
           <select
             className="product__status"
-            id="statusDropdown"
+            id={product.id + "statusDropdown"}
             value={selectedStatus}
             onChange={handleStatusChange}
           >
